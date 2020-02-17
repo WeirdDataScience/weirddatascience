@@ -1,6 +1,6 @@
 # Weird Data Science
 
-Paranormal Distributions. Cyclopean Data. Esoteric Regression.
+*Paranormal Distributions. Cyclopean Data. Esoteric Regression.*
 
 Code and data from the Weird Data Science blog: https://www.weirddatascience.net/ | [@WeirdDataSci](https://twitter.com/weirddatasci)
 
