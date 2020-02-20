@@ -1,10 +1,15 @@
 library( tidyverse )
 library( tidyselect )
-library( tidytext )
 library( magrittr )
 
 library( rstan )
+library( bayesplot )
 
+library( shinystan )
+
+library( ggplot2 )
+
+library( tidytext )
 
 
 # Load Tirant data
@@ -32,11 +37,9 @@ tirant_lengths <-
 	select(sort(peek_vars())) %>%
 	replace( is.na(.), 0 )
 
-dir.create( "work", showWarnings = FALSE)
 if( not( file.exists( "work/multinomial_changepoint_tirant_fit.rds" ) ) ) {
 
 	message( "Fitting multinomial model.")
-	tirant_seed <- 1490
 	tirant_multinom_fit <-
 		stan( "multinomial_changepoint.stan", 
 			  data=list( 
@@ -44,7 +47,7 @@ if( not( file.exists( "work/multinomial_changepoint_tirant_fit.rds" ) ) ) {
 							num_cats=4,
 							y = as.matrix( tirant_lengths ),
 							alpha = rep( 1, 4 ) ),
-			  iter=16000, seed=tirant_seed,
+			  iter=16000,
 				control=list( 
 								 adapt_delta=0.98,
 								 max_treedepth=15 ) )
