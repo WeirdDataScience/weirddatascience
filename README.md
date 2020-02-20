@@ -1,10 +1,10 @@
 # Weird Data Science
 
-Arcane Data! Machine Learning! Esoteric Regression!
+*Paranormal Distributions. Cyclopean Data. Esoteric Regression.*
 
 Code and data from the Weird Data Science blog: https://www.weirddatascience.net/ | [@WeirdDataSci](https://twitter.com/weirddatasci)
 
-Weird Data Science is an exploration of the esoteric, the bizarre, and the unknown with the terrible power of data science.
+Weird Data Science is an exploration of the esoteric, the bizarre, and the unknown with the awful power of data science.
 
  - What is the probability of being abducted by aliens?
  - Are there seasonal patterns in cryptozoological sightings?
